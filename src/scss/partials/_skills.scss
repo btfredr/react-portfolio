@@ -1,0 +1,50 @@
+/* Part of the site where I showcase my skills */
+
+.my-skills {
+  background-image: url(../../images/laptop.jpg);
+  background-blend-mode: multiply;
+  background-color: var(--clr-light);
+  background-size: cover;
+  text-align: center;
+  color: var(--clr-dark);
+}
+
+.skill {
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__title,
+  &__content {
+    text-align: left;
+  }
+}
+
+@media (min-width: 600px) {
+  .skill + .skill {
+    margin-left: 2em;
+  }
+
+  .skills {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.skillsBtn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.skillsBtn:hover {
+  transform: scale(1.1);
+}

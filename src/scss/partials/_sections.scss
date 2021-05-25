@@ -1,0 +1,71 @@
+.section {
+  &__title {
+    margin-bottom: 0.25em;
+  }
+
+  &__title--intro {
+    font-weight: var(--fw-reg);
+  }
+
+  &__title--intro strong {
+    display: block;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+  }
+
+  &__subtitle--intro,
+  &__subtitle--aboutMe {
+    background: var(--clr-accent);
+    padding: 0.25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+  }
+
+  &__title--skills {
+    color: var(--clr-accent);
+    position: relative;
+  }
+
+  &__title--skills::after {
+    display: block;
+    content: "";
+    width: 2em;
+    background: var(--clr-dark);
+    height: 1px;
+    opacity: 0.3;
+    margin: 0.5em auto 1em;
+  }
+
+  &__subtitle--projects {
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+    color: var(--clr-accent);
+  }
+}
+
+@media (min-width: 600px) {
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    z-index: 1;
+  }
+
+  .section__title--aboutMe {
+    grid-area: title;
+  }
+
+  .section__subtitle--aboutMe {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calc(100% + 4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em);
+  }
+}
