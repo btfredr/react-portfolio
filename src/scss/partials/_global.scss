@@ -85,3 +85,12 @@ img {
 strong {
   font-weight: var(--fw-bold);
 }
+
+.logo {
+  max-width: 250px;
+
+  &__item {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}

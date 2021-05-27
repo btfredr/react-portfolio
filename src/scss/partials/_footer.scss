@@ -1,0 +1,42 @@
+/* Styling the site footer */
+
+.footer {
+  background: black;
+  color: var(--clr-accent);
+  padding: 1em;
+  text-align: center;
+  font-size: var(--fs-h3);
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & a:hover {
+    opacity: 0.8;
+  }
+
+  &__link {
+    font-weight: var(--fw-bold);
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
+
+.socialList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+
+  &__item {
+    margin: 0 0.5em;
+  }
+
+  &__link {
+    padding: 0.5em;
+  }
+}

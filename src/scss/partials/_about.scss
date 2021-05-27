@@ -1,0 +1,33 @@
+.aboutMe {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__img {
+    box-shadow: var(--bs);
+    border-radius: 5%;
+  }
+
+  &__sidebar {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+
+    &__img {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
