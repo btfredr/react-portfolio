@@ -14,9 +14,9 @@ function App() {
         <Projects />
 
         <Switch>
-          <Route path="#intro" exact component={Intro}></Route>
-          <Route path="#experience" exact component={Skills}></Route>
-          <Route path="#my-skills" exact component={Projects}></Route>
+          <Route path="/#intro" exact component={Intro}></Route>
+          <Route path="/#experience" exact component={Skills}></Route>
+          <Route path="/#projects" exact component={Projects}></Route>
         </Switch>
       </Router>
     </>

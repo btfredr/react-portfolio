@@ -1,3 +1,8 @@
+import BreakingBad from "../images/breakingbad.png";
+import FedUp from "../images/site-icon.png";
+import SpaceX from "../images/share.jpg";
+import Holidaze from "../images/Holidaze.JPG";
+
 const Projects = () => {
   return (
     <section className="projects" id="projects">
@@ -8,14 +13,14 @@ const Projects = () => {
 
       <div className="portfolio">
         <a
-          href="http://tasks.fredrikfordelsen.no/semester-project/index.html"
+          href="http://holidaze.fredrikfordelsen.no"
           target="_blank"
           className="portfolio__item"
         >
           <img
-            src="./images/numetry-logo-clean.png"
-            alt="Eduplaytion Numetry logo"
-            classNameName="portfolio__image"
+            src={Holidaze}
+            alt="Breaking Bad database"
+            className="portfolio__image"
           />
         </a>
 
@@ -25,7 +30,7 @@ const Projects = () => {
           className="portfolio__item"
         >
           <img
-            src="./images/breakingbad.png"
+            src={BreakingBad}
             alt="Breaking Bad database"
             className="portfolio__image"
           />
@@ -37,7 +42,7 @@ const Projects = () => {
           className="portfolio__item"
         >
           <img
-            src="./images/site-icon.png"
+            src={FedUp}
             alt="Flower Power logo"
             className="portfolio__image"
           />
@@ -48,11 +53,7 @@ const Projects = () => {
           target="_blank"
           className="portfolio__item"
         >
-          <img
-            src="./images/share.jpg"
-            alt="SpaceX logo"
-            className="portfolio__image"
-          />
+          <img src={SpaceX} alt="SpaceX logo" className="portfolio__image" />
         </a>
       </div>
     </section>

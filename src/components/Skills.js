@@ -44,9 +44,9 @@ const Skills = () => {
       </div>
 
       <Button>
-        <Link to="#projects" className="skillsBtn">
+        <a href="#projects" className="skillsBtn">
           My Work
-        </Link>
+        </a>
       </Button>
     </section>
   );

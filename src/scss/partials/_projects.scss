@@ -2,17 +2,20 @@
 
 .projects {
   text-align: center;
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
 }
 
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+  max-width: 1000px;
+  margin: 0 auto;
 
   &__item {
     margin: 1em;
     background: transparent;
+    margin: 2em;
   }
 
   &__item:focus {
@@ -35,5 +38,6 @@
 @media (max-width: 768px) {
   .portfolio {
     display: block;
+    margin: 2em;
   }
 }
