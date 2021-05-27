@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -10,9 +11,12 @@ function App() {
         <Nav />
         <Intro />
         <Skills />
+        <Projects />
 
         <Switch>
           <Route path="#intro" exact component={Intro}></Route>
+          <Route path="#experience" exact component={Skills}></Route>
+          <Route path="#my-skills" exact component={Projects}></Route>
         </Switch>
       </Router>
     </>
