@@ -1,9 +1,7 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="mailto:fredrikf2000@gmail.com" className="footer__link">
-        fredrikf2000@gmail.com
-      </a>
+      <h3 className="logo__item">Fredrik Fordelsen</h3>
       <ul className="socialList">
         <li className="socialList__item">
           <a className="socialList__link" href="https://www.github.com/btfredr">
