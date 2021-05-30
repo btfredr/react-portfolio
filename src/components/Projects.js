@@ -1,5 +1,5 @@
 import BreakingBad from "../images/breakingbad.png";
-import FedUp from "../images/site-icon.png";
+import Hulu from "../images/hulu.svg.png";
 import SpaceX from "../images/share.jpg";
 import Holidaze from "../images/Holidaze.JPG";
 
@@ -13,20 +13,18 @@ const Projects = () => {
 
       <div className="portfolio">
         <a
-          href="http://holidaze.fredrikfordelsen.no"
+          href="https://holidaze.fredrikfordelsen.no"
           target="_blank"
+          rel="noreferrer"
           className="portfolio__item"
         >
-          <img
-            src={Holidaze}
-            alt="Breaking Bad database"
-            className="portfolio__image"
-          />
+          <img src={Holidaze} alt="Holidaze" className="portfolio__image" />
         </a>
 
         <a
-          href="http://breakingbad.fredrikfordelsen.no"
+          href="https://breakingbad.fredrikfordelsen.no"
           target="_blank"
+          rel="noreferrer"
           className="portfolio__item"
         >
           <img
@@ -37,20 +35,18 @@ const Projects = () => {
         </a>
 
         <a
-          href="http://fedup.fredrikfordelsen.no"
+          href="https://hulu-clone-rust.vercel.app/"
           target="_blank"
+          rel="noreferrer"
           className="portfolio__item"
         >
-          <img
-            src={FedUp}
-            alt="Flower Power logo"
-            className="portfolio__image"
-          />
+          <img src={Hulu} alt="Hulu Clone" className="portfolio__image" />
         </a>
 
         <a
-          href="http://spacex.fredrikfordelsen.no"
+          href="https://spacex.fredrikfordelsen.no"
           target="_blank"
+          rel="noreferrer"
           className="portfolio__item"
         >
           <img src={SpaceX} alt="SpaceX logo" className="portfolio__image" />

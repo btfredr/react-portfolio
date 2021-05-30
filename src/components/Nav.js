@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Nav = () => {
+  const [openNav, setOpenNav] = useState(false);
+
   return (
     <header>
       <div className="logo">
@@ -13,21 +15,21 @@ const Nav = () => {
 
       <nav className="nav">
         <ul className="nav__list">
-          <Link to="#home" className="nav__link">
+          <a href="#home" className="nav__link">
             Home
-          </Link>
+          </a>
 
-          <Link to="#experience" className="nav__link">
+          <a href="#experience" className="nav__link">
             Experience
-          </Link>
+          </a>
 
-          <Link to="#projects" className="nav__link">
+          <a href="#projects" className="nav__link">
             Projects
-          </Link>
+          </a>
 
-          <Link to="#aboutMe" className="nav__link">
+          <a href="#aboutMe" className="nav__link">
             About Me
-          </Link>
+          </a>
         </ul>
       </nav>
     </header>

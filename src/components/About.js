@@ -13,9 +13,10 @@ const About = () => {
           <p>
             I'm currently 20 years old and studying Front-End Development at
             Noroff in Bergen. Among what I've been learning are languages like
-            HTML, CSS, and JavaScript. If you're interested in going more in
-            depth into my previous projects, you can find them on this page or
-            on my GitHub account.
+            HTML, CSS, and JavaScript, as well as frameworks like Bootstrap,
+            Material UI, Tailwind CSS, NextJS and React. If you're interested in
+            going more in depth into my previous projects, you can find them on
+            this page or on my GitHub account.
           </p>
           <p>
             If you'd ask me to describe myself, I would say that I'm a
@@ -29,7 +30,7 @@ const About = () => {
           </p>
         </div>
 
-        <img src={Meg} alt="image of me" className="aboutMe__img" />
+        <img src={Meg} alt="Me" className="aboutMe__img" />
       </section>
     </div>
   );

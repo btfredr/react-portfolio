@@ -9,7 +9,7 @@ const Intro = () => {
       <p className="section__subtitle section__subtitle--intro">
         front-end developer
       </p>
-      <img src={IntroPicture} alt="a picture of me" className="intro__img" />
+      <img src={IntroPicture} alt="Introduction" className="intro__img" />
     </section>
   );
 };

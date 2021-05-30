@@ -1,5 +1,4 @@
 import { Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
 
 const Skills = () => {
   return (
@@ -9,8 +8,9 @@ const Skills = () => {
         <div className="skill">
           <h3 className="skill__title">Design and development</h3>
           <p className="skill__content">
-            While I’ve mainly been studying languages like HTML, CSS and
-            JavaScript, I’ll also start learning React JS soon.
+            I've been learning HTML, CSS and JavaScript, as well as some brief
+            experience with frameworks like React, NextJS, Tailwind CSS and
+            Bootstrap.
           </p>
           <p className="skill__content">
             Seeing as I’m currently studying to become a Front-End Developer,
