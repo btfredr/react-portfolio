@@ -17,6 +17,10 @@
   &__content {
     text-align: left;
   }
+
+  &__title {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -31,18 +35,29 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .skill {
+    margin: 20px;
+  }
+
+  .skillsBtn {
+    margin: 20px;
+  }
+}
+
 .skillsBtn {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
+  transition: transform 150ms ease-in-out;
   display: inline-block;
   padding: 1rem 3rem;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
+  margin: 3em;
 }
 
 .skillsBtn:hover {

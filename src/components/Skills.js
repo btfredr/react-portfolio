@@ -6,7 +6,7 @@ const Skills = () => {
       <h2 className="section__title section__title--skills">What I do</h2>
       <div className="skills">
         <div className="skill">
-          <h3 className="skill__title">Design and development</h3>
+          <h3 className="skill__title">Frameworks</h3>
           <p className="skill__content">
             I've been learning HTML, CSS and JavaScript, as well as some brief
             experience with frameworks like React, NextJS, Tailwind CSS and
@@ -14,7 +14,7 @@ const Skills = () => {
           </p>
           <p className="skill__content">
             Seeing as I’m currently studying to become a Front-End Developer,
-            design also a part of my project in addition to coding
+            design also a part of my project in addition to coding.
           </p>
         </div>
 

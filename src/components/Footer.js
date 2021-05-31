@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <h3 className="logo__item">Fredrik Fordelsen</h3>
+      <h3 className="logo">Fredrik Fordelsen</h3>
       <ul className="socialList">
         <li className="socialList__item">
           <a className="socialList__link" href="https://www.github.com/btfredr">
