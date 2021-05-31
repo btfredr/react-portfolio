@@ -3,33 +3,37 @@ import { useState } from "react";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
 
+  function toggleNav() {
+    setOpenNav(!openNav);
+  }
+
   return (
-    <header>
-      <div class="logo">
-        <h3 class="logo__item">Fredrik Fordelsen</h3>
+    <header className={openNav && "nav-open"}>
+      <div className="logo">
+        <h3 className="logo__item">Fredrik Fordelsen</h3>
       </div>
-      <button class="toggleNav" onClick={() => setOpenNav(!openNav)}>
-        <span class="hamburger"></span>
+      <button className="toggleNav" onClick={toggleNav}>
+        <span className="hamburger"></span>
       </button>
-      <nav class="nav">
-        <ul class={openNav ? "nav-open" : ""}>
-          <li class="nav__item">
-            <a href="#home" class="nav__link">
+      <nav className="nav">
+        <ul className="nav__list">
+          <li className="nav__item" onClick={toggleNav}>
+            <a href="#home" className="nav__link">
               Home
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">
+          <li className="nav__item" onClick={toggleNav}>
+            <a href="#experience" className="nav__link">
               Experience
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#projects" class="nav__link">
+          <li className="nav__item" onClick={toggleNav}>
+            <a href="#projects" className="nav__link">
               Projects
             </a>
           </li>
-          <li class="nav__item">
-            <a href="#aboutMe" class="nav__link">
+          <li className="nav__item" onClick={toggleNav}>
+            <a href="#aboutMe" className="nav__link">
               About me
             </a>
           </li>
